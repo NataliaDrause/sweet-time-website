@@ -1,0 +1,42 @@
+.features {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-column-gap: 5rem;
+margin: 10rem;
+
+@media only screen and (max-width: $bp-medium) {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+    justify-items: center;
+    justify-content: center;
+}
+
+    .feature {
+        box-shadow: 4px 4px 4px rgba(252, 214, 214, 0.1), inset 4px 4px 4px rgba(251, 232, 232, 0.1);
+        border-radius: 12px;
+        max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 20% 4rem 20%;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 3rem;
+            width: 25rem;
+        }
+
+        &__icon {
+            height: 6rem;
+            width: 6rem;
+            fill: $color-primary-1;
+        }
+
+        &__p {
+            text-align: center;
+            padding-top: 3rem;
+        }
+
+    }
+
+}

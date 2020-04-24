@@ -1,0 +1,46 @@
+// COLOR VARIABLES
+$color-primary: #de333f;
+$color-primary-1: #ED4A4A;
+$color-secondary: #fcbfbf;
+$color-primary-light: #ffe5e5;
+$color-primary-light-1: #fff5f5;
+$color-primary-light-2: #fff0f0;
+$color-white: #fff;
+$color-black: #000;
+$color-grey: #6C6A6A;
+
+// FONT VARIABLES
+$font-primary: 'Montserrat', sans-serif;
+
+//RESPONSIVE BREAKPOINT
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px/16=50
+$bp-small: 37.5em; // 600px/16=37.5
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-black;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    overflow-x: hidden;
+}

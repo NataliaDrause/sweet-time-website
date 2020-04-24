@@ -1,0 +1,57 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-primary-light;
+    padding: 3rem 10rem;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 3rem 5rem;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        img {
+            display: block;
+            height: 5rem;
+            width: auto;
+            transform: translateY(-.6rem);
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 5rem;
+        min-width: 40rem;
+
+        @media only screen and (max-width: $bp-large) {
+            display: none;
+        }
+    }
+    &__nav-item {
+        list-style: none;
+        padding: 0 2rem;
+    }
+    &__nav-link:link,
+    &__nav-link:visited {
+        text-decoration: none;
+        color: $color-black;
+        outline: none;
+        transition: all, .2s;
+    }
+    &__nav-link:hover,
+    &__nav-link:active {
+        color: $color-primary-1;
+    }
+
+    &__btn {
+
+        @media only screen and (max-width: $bp-large) {
+            display: none;
+        }
+    }
+}
+

@@ -1,0 +1,23 @@
+.cta {
+    //position: relative;
+    margin: 0 10rem 10rem 10rem;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin: 5rem;
+    }
+    
+    &__h2 {
+        margin-bottom: 1.2rem;
+    }
+    p {
+        margin: 0 25%;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin: 0;
+        }
+    }
+    &__btn {
+        margin-top: 5rem;
+    }
+}
